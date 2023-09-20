@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,11 +14,16 @@
         <sidebar>
             <h2>Website made with:</h2>
             <div class="symbols">
-                <img src="static/img/main_page/python.png" alt="python">
-                <img src="static/img/main_page/django.png" alt="django">
-                <img src="static/img/main_page/html.png" alt="html">
-                <img src="static/img/main_page/css.png" alt="css">
-                <img src="static/img/main_page/JavaScript.png" alt="javascript">
+                {% comment %} <img src="static/img/main_page/python.png" alt="python"> {% endcomment %}
+                <img src="{% static "img/main_page/python.png" %}">
+                {% comment %} <img src="static/img/main_page/django.png" alt="django %}"> {% endcomment %}
+                <img src="{% static "img/main_page/django.png" %}">
+                {% comment %} <img src="static/img/main_page/html.png" alt="html"> {% endcomment %}
+                <img src="{% static "img/main_page/html.png" %}">
+                {% comment %} <img src="static/img/main_page/css.png" alt="css"> {% endcomment %}
+                <img src="{% static "img/main_page/css.png" %}" >
+                {% comment %} <img src="static/img/main_page/JavaScript.png" alt="javascript"> {% endcomment %}
+                <img src="{% static "img/main_page/JavaScript.png" %}">
             </div>
         </sidebar>
         <main>
